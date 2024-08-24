@@ -10,26 +10,26 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-    
-        VStack{
-            Text("Profile").bold().font(.system(size: 24))
+        Text("Profile").bold().font(.system(size: 24))
+        VStack(alignment: .leading){
+           
             HStack{
                
                 Rectangle().fill(.clear).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/).frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
                 
-                VStack{
+                VStack(alignment: .leading){
                 
-                    Text("Name: Arwa Alzahrani").bold().padding(.trailing,55)
-                    Text("Email:").bold().padding(.trailing,180)
+                    Text("Name: Arwa Alzahrani").bold()
+                    Text("Email:").bold()
                     Text("arwaalzahrani835@gmail.com")
                 }
             }
             
-            Text("Bio").bold().padding(.trailing,315)
+            Text("Bio").bold()
             Rectangle().fill(.clear).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/).frame(width:340 ,height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-            Text("Education").bold().padding(.trailing,260)
+            Text("Education").bold()
             Rectangle().fill(.clear).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/).frame(width:340 ,height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-            Text("Skiils").bold().padding(.trailing,300)
+            Text("Skiils").bold()
             Rectangle().fill(.clear).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/).frame(width:340 ,height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
         }
     }
